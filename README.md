@@ -1,3 +1,3 @@
-# Headline
+# AutoDomain
 
 > An awesome project.
