@@ -1,62 +1,583 @@
-<!DOCTYPE html>
-<html lang="zh-cn">
-<head>
-  <meta charset="UTF-8">
-  <title>AutoDomain官方文档</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-  <meta name="AutoDomain" content="领域驱动数据中台系统">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <!-- 设置浏览器图标 -->
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
-</head>
-<body>
-  <div id="app"></div>
-  <script>
-    window.$docsify = {
-      name: 'AutoDomain 官方文档',
-      repo: '',
-       // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
-       loadSidebar: true,
-            // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
-            loadNavbar: true,
-            // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
-            coverpage: false,
-            // 最大支持渲染的标题层级
-            maxLevel: 2,
-            // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
-            subMaxLevel: 4,
-            // 小屏设备下合并导航栏到侧边栏
-            mergeNavbar: true,
-            /*搜索相关设置*/
-            search: {
-                maxAge: 86400000,// 过期时间，单位毫秒，默认一天
-                paths: 'auto',// 注意：仅适用于 paths: 'auto' 模式
-                placeholder: '搜索',              
-                // 支持本地化
-                placeholder: {
-                    '/zh-cn/': '搜索',
-                    '/': 'Type to search'
-                },
-                noData: '找不到结果',
-                depth: 4,
-                hideOtherSidebarContent: false,
-                namespace: 'Docsify-Guide',
-            }
-    }
-  </script>
-  <!-- Docsify v4 -->
-  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-   <!-- 图片放大缩小支持 -->
-   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
-   <!-- 搜索功能支持 -->
-   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
-   <!--在所有的代码块上添加一个简单的Click to copy按钮来允许用户从你的文档中轻易地复制代码-->
-   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code/dist/docsify-copy-code.min.js"></script>
-   <!-- 侧边栏折叠 -->
-   <!-- <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script> -->
+<!doctype html>
+<html>
 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1">
+	<title>艾薇传感系统 - 智能传感器控制系统</title>
+	<meta name="keywords" content="激光传感器控制系统,艾薇实验室,激光传感器,4-20mA模拟转换,上位机软件开发,软件定制开发,传感器解决方案,定制开发,工业4.0" />
+	<meta name="description" content="致力于智能工厂与传感器的整合，为祖国的工业4.0尽一份薄力。" />
+	<link rel="icon" href="favicon.ico" type="image/png">
+	<link href="Home/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+	<link href="Home/css/style.css" rel="stylesheet" type="text/css">
+	<link href="Home/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="Home/css/animate.css" rel="stylesheet" type="text/css">
+	<link href="Home/css/fancybox/jquery.fancybox.css" rel="stylesheet">
+	<link href="Home/css/magnific-popup.css" rel="stylesheet">
+	<link href="Home/css/gallery-1.css" rel="stylesheet">
+	<link rel="stylesheet" href="Home/css/owl.carousel.css">
+	<link rel="stylesheet" href="Home/css/owl.theme.css">
+</head>
+
+<body>
+
+	<!--Header_section-->
+	<header id="header_wrapper">
+		<div class="container">
+			<div class="header_box">
+				<div class="logo">
+					<a href="#">
+						<img src="Home/img/logo_ieeve.png" alt="艾薇软件实验室">
+					</a>
+				</div>
+				<nav class="navbar navbar-inverse" role="navigation">
+					<div class="navbar-header">
+						<button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+							<span class="sr-only">导航</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+					</div>
+					<div id="main-nav" class="collapse navbar-collapse navStyle">
+						<ul class="nav navbar-nav" id="mainNav">
+							<li class="active">
+								<a href="#hero_section" class="scroll-link">首页</a>
+							</li>
+							<li>
+								<a href="#aboutUs" class="scroll-link">品牌</a>
+							</li>
+							<li>
+								<a href="#feature-section" class="scroll-link">功能</a>
+							</li>
+							<li>
+								<a href="#pricing" class="scroll-link">价格</a>
+							</li>
+							<li>
+								<a href="#contact" class="scroll-link">联系</a>
+							</li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
+	<!--Header_section-->
+
+	<!--Hero_Section-->
+	<section id="hero_section" class="top_cont_outer">
+		<div class="hero_wrapper">
+			<div class="container">
+				<div class="hero_section">
+					<div class="row">
+						<div class="col-lg-5 col-sm-7">
+							<div class="top_left_cont fadeInDown animated">
+								<h2>
+									<strong></strong>智能传感器控制软件</h2>
+								<p>4-20mA模拟转换</p>
+								<p>为了实现智能工厂，需要大量的传感器智能地收集、提供和分析海量的数据。这些传感器必须能够与互联网或者云端进行信息互通。简言之，它们本身就必须是智能化的。</p>
+								<a href="#pricing" class="read_more2">立即购买</a>
+							</div>
+						</div>
+						<div class="col-lg-7 col-sm-5">
+							<img src="img/main_device.png" class="zoomIn  animated" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Hero_Section-->
+
+	<section id="aboutUs">
+		<!--Aboutus-->
+		<div class="inner_wrapper">
+			<div class="container">
+				<h2>网络化工厂的智能传感器 </h2>
+				<div class="text-center">快速构建符合你自身业务的智能控制平台。</div>
+				<div class="inner_section">
+					<div class="lightspot-box">
+						<ul>
+							<li>
+								<div class="lightspot-img01"></div>
+								<h3>优秀的性能表现</h3>
+								<p>极低的系统资源占用率。
+									<br/>触手可及的快速体验。
+									<br/>安全与稳定可靠的性能。
+									<br/>
+									<br/>
+								</p>
+							</li>
+							<li>
+								<div class="lightspot-img02"></div>
+								<h3>丰富数据传输模式</h3>
+								<p>4-20mA模数转换
+									<br/>rs232/rs485串口传输
+									<br/>usb数据音频视频传输
+									<br/>wifi或gprs的网络传输
+									<br/>
+								</p>
+							</li>
+							<li>
+								<div class="lightspot-img03"></div>
+								<h3>支持多种传感设备</h3>
+								<p>多种形式的功能模块，
+									<br/>支持各类激光传感器。
+									<br/> 国内外知名制造商传感器
+								</p>
+							</li>
+							<li>
+								<div class="lightspot-img04"></div>
+								<h3>定制开发&系统集成</h3>
+								<p>量身定做，无缝对接原有办公系统!
+									<br/> 轻松集成到SharePoint、ERP、CRM、OA等各种办公系统
+									<br/>
+									<br/>
+								</p>
+							</li>
+						</ul>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Aboutus-->
+
+	<!-- START FEATURES SECTION -->
+	<section id="feature-section" class="section-padding">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="feature-top common-section-white-top">
+						<h2>智能传感器控制系统</h2>
+
+					</div>
+				</div>
+			</div>
+
+			<div class="feature-bottom">
+				<div class="row">
+					<!-- feature left start -->
+					<div class="col-lg-3 col-md-4">
+						<div class="row">
+							<!-- feature left-top -->
+							<div class="col-lg-12 col-md-12 col-sm-6">
+								<div class="feature-left-top feature-multi-left">
+									<img src="img/wifi.png" alt="wifi" />
+									<h4>智能抗干扰的处理信号</h4>
+									<p>对于传感器无效数据智能过滤，有效的杜绝液面反射等原因引起的激光类传感器信号错误。</p>
+								</div>
+							</div>
+							<!-- feature left-middle -->
+							<div class="col-lg-12 col-md-12 col-sm-6">
+								<div class="feature-left-middle feature-multi-left">
+									<img src="img/refresh.png" alt="refresh" />
+									<h4>方便的阈值预警功能</h4>
+									<p>系统7*24全天候对质量事件监控，超出设定范围，通知用户并发出警报。</p>
+								</div>
+							</div>
+							<!-- feature left-bottom -->
+							<div class="col-lg-12 col-md-12 col-sm-6">
+								<div class="feature-left-bottom feature-multi-left tab-hide">
+									<img src="img/touch.png" alt="touch" />
+									<h4>灵活的数据分析</h4>
+									<p>通过大数据挖掘所发现的因果关系，不仅能揭示存在的规律，而且能够预测未来发展趋势。</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- feature middle start -->
+					<div class="col-lg-6 col-md-4">
+						<div class="feature-middle">
+							<img src="img/thermoIMAGER.png" alt="feature-img" class="img-responsive" />
+						</div>
+					</div>
+
+					<!-- feature right start -->
+
+					<div class="col-lg-3 col-md-4">
+						<!-- feature right-top -->
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-6">
+								<div class="feature-right-top feature-multi-right tab-hide">
+									<img src="img/responsive.png" alt="responsive" />
+									<h4>强大的数据处理能力</h4>
+									<p>系统以10Hz的频率采集和保存数据, 每个设备每天近90万条记录，每个月2600万条记录，系统的合理设计确保数据的完整性及软件的高性能。</p>
+								</div>
+							</div>
+						</div>
+						<!-- feature right-middle -->
+						<div class="col-lg-12 col-md-12 col-sm-6">
+							<div class="feature-right-middle feature-multi-right">
+								<img src="img/users.png" alt="users" />
+								<h4>可视化的实时数据展示</h4>
+								<p>数据可视化是数据展现最直观最全面的方式之一，对于企业重要数据指标的展示和实时数据的监测，是目前极佳的方式。</p>
+							</div>
+						</div>
+						<!-- feature right-bottom -->
+						<div class="col-lg-12 col-md-12 col-sm-6">
+							<div class="feature-right-bottom feature-multi-right">
+								<img src="img/setting.png" alt="setting" />
+								<h4>配置设备、查询参数</h4>
+								<p>配置设备，修改参数，简单方便。</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- / END FEATURES SECTION -->
+	<!-- START SCREENSHOTS SECTION -->
+	<section id="screenshots-section" class="section-padding">
+		<div class="container screenshot text-center">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="screenshots-top common-section-blue-top">
+						<h2>应用场景</h2>
+						<p>我们所提供的传感器方案为全世界的客户快速有效地解决了众多自动化技术的应用问题。</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0044868.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0044868.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0046557.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0046557.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0053420.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0053420.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0053591.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0053591.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0054672.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0054672.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0058844.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0058844.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0065085.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0065085.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<a href="img/scene/IM0073026.jpg" class="thumbnail">
+						<img style="height: 150px;" src="img/scene/IM0073026.jpg" alt="聚焦第四次工业革命">
+					</a>
+				</div>
+			</div>
+			<div>
+				<br/>
+				<br/>
+			</div>
+		</div>
+	</section>
+	<!-- / END SCREENSHOTS SECTION -->
+
+	<section id="pricing" class="pricing-container page_section">
+		<div class="container">
+			<h2>合作共赢</h2>
+			<h6>卓越的便利性和实用性，脚踏实地的为您提高效率、节约成本!</h6>
+			<div class="row">
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="pricing">
+						<div class="pricing-title">
+							<p>基础控制版</p>
+						</div>
+						<div class="pricing-price">
+							<p>
+								<sup>￥</sup>5000元 </p>
+						</div>
+						<div class="pricing-features">
+							<p>传感器数据的采集与存储查询</p>
+							<p>可视化的实时数据展示</p>
+							<p>方便的阈值预警功能</p>
+							<p>智能误报数据评判系统</p>
+
+						</div>
+						<div class="pricing_btn">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="pricing">
+						<div class="pricing-title">
+							<p>工作任务版</p>
+						</div>
+						<div class="pricing-price">
+							<p>
+								<sup>￥</sup>7000+</p>
+						</div>
+						<div class="pricing-features">
+							<p>包含基础版所有功能</p>
+							<p>增加任务管理系统</p>
+							<p>增加用户权限管理</p>
+							<p>其他的修改定制</p>
+						</div>
+						<div class="pricing_btn">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="pricing">
+						<div class="pricing-title">
+							<p>系统集成版</p>
+						</div>
+						<div class="pricing-price">
+							<p>
+								<sup>￥</sup>9000+</p>
+						</div>
+						<div class="pricing-features">
+							<p>包含基础版所有功能</p>
+							<p>整合对接ERP系统</p>
+							<p>整合对接OA系统</p>
+							<p>输出信号控制其他传感设备</p>
+						</div>
+						<div class="pricing_btn">
+
+						</div>
+					</div>
+				</div>
+				<div class="col-md-3 col-sm-3 col-xs-12">
+					<div class="pricing">
+						<div class="pricing-title">
+							<p>定制开发</p>
+						</div>
+						<div class="pricing-price">
+							<p>
+								<sup>￥ </sup>面议</p>
+						</div>
+						<div class="pricing-features">
+							<p>每一次的技术变革都伴随着生产效率的提高、生产成本的降低以及对客户需求满足的提升!</p>
+							<p>选择我们，与高质量同行。</p>
+							<p></p>
+							<p></p>
+						</div>
+						<div class="pricing_btn">
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--- END ROW -->
+		</div>
+		<!--- END CONTAINER -->
+	</section>
+	<!--Aboutus-->
+	<section id="aboutUs">
+		<div class="inner_wrapper">
+			<div class="container">
+				<h2>软件定制的优势</h2>
+				<div class="inner_section">
+					<div class="row">
+						<div class=" col-lg-4 col-md-4 col-sm-4 col-xs-12 pull-right">
+							<img src="img/about-img.png" class="delay-03s animated wow zoomIn" alt="">
+						</div>
+						<div class=" col-lg-7 col-md-7 col-sm-7 col-xs-12 pull-left">
+							<div class=" delay-01s animated fadeInDown wow animated">
+								<h3>可根据客户的需求，量身定制一系列符合客户实际应用的软件。</h3>
+								<br/>
+								<p>
+									<b>☆针对性强</b>
+									<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;每一个软件的开发都要经过细致的系统分析，针对不同企业的情况，编制最适用的程序。在编写软件的过程中，可以将管理者的最新管理思路或者最科学的管理模式融入到软件的数学模型中，从而大大提高了软件的科学价值，带给企业巨大的经济效益;
+									<br/>
+									<b>☆使用方便</b>
+									<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;完全根据企业现有的工作流程编制程序，用户只需具备基本的计算机使用知识，就可以自如的操控软件，不必进行复杂的培训;
+									<br/>
+									<b>☆费用低廉</b>
+									<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定制软件根据企业实际情况，编制企业所需的功能模块，删除没有实际使用价值的功能，最大限度的缩短开发周期，从而节省开发费用;
+									<br/>
+									<b>☆服务周到</b>
+									<br/> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;定制软件在使用过程中出现的问题，全部由开发商上门解决，对于在调试期内的软件，可以根据实际应用做一些小范围调整，对于一些非定制软件产生的使用故障，也可以由开发商统一解决。
+								</p>
+								<br/>
+
+							</div>
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--Aboutus-->
+
+
+	<section id="clients">
+		<!--page_section-->
+		<!--page_section-->
+		<div class="client_logos">
+			<!--client_logos-->
+			<div class="container">
+				<ul class="fadeInRight animated wow">
+					<li>
+						<a href="https://www.sick.com" target="_blank">SICK 中国</a>
+					</li>
+					<li>
+						<a href="https://www.micro-epsilon.com/" target="_blank">德国米铱</a>
+					</li>
+					<li>
+						<a href="https://www.pepperl-fuchs.com/" target="_blank">倍加福</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	<!--client_logos-->
+	<!--Footer-->
+	<footer class="footer_wrapper" id="contact">
+		<div class="container">
+			<section class="page_section contact" id="contact">
+				<div class="contact_section">
+					<h2>联系我们</h2>
+					<div class="row">
+						<div class="col-lg-4">
+
+						</div>
+						<div class="col-lg-4">
+
+						</div>
+						<div class="col-lg-4">
+
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 wow fadeInLeft">
+						<div class="contact_info">
+							<div class="detail">
+								<h4>业务咨询：</h4>
+								<p>13271515217</p>
+							</div>
+							<div class="detail">
+								<h4>技术支持:</h4>
+								<p>
+									<a href="http://www.acctc.com/">www.acctc.com</a>
+								</p>
+								<p>QQ：
+									<a href="tencent://Message/?Uin=30652805&amp;websiteName=q-zone.qq.com&amp;Menu=yes">30652805</a>
+								</p>
+							</div>
+							<div class="detail">
+								<h4>邮箱</h4>
+								<p>ieeve@foxmail.com </p>
+							</div>
+						</div>
+
+
+
+						<ul class="social_links">
+							<li class="twitter animated bounceIn wow delay-02s">
+								<a href="javascript:void(0)">
+									<i class="fa fa-twitter"></i>
+								</a>
+							</li>
+							<li class="facebook animated bounceIn wow delay-03s">
+								<a href="javascript:void(0)">
+									<i class="fa fa-facebook"></i>
+								</a>
+							</li>
+							<li class="pinterest animated bounceIn wow delay-04s">
+								<a href="javascript:void(0)">
+									<i class="fa fa-pinterest"></i>
+								</a>
+							</li>
+							<li class="gplus animated bounceIn wow delay-05s">
+								<a href="javascript:void(0)">
+									<i class="fa fa-google-plus"></i>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-8 wow fadeInLeft delay-06s">
+						<div class="form">
+							<!--NOTE: Update your email Id in "contact_me.php" file in order to receive emails from your contact form-->
+
+							<div class="control-group">
+								<div class="controls">
+									<input type="text" class="form-control input-text" placeholder="您的姓名" id="name" required data-validation-required-message="Please enter your name"
+									/>
+									<p class="help-block"></p>
+								</div>
+							</div>
+							<div class="control-group">
+								<div class="controls">
+									<input type="email" class="form-control input-text" placeholder="您的电话" id="email" required data-validation-required-message="Please enter your email"
+									/>
+								</div>
+							</div>
+
+							<div class="control-group">
+								<div class="controls">
+									<textarea rows="10" cols="100" class="form-control input-text" placeholder="说点什么吧..." id="message" required data-validation-required-message="Please enter your message"
+									 minlength="5" data-validation-minlength-message="Min 5 characters" maxlength="999" style="resize:none"></textarea>
+								</div>
+							</div>
+							<div id="success"> </div>
+							<!-- For success/fail messages -->
+							<button type="submit" class="btn btn-primary input-btn pull-right">发送</button>
+							<br />
+
+
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div class="container">
+			<div class="footer_bottom">Copyright© 2016-2018
+				<a href='http://www.miitbeian.gov.cn' target='_blank'>豫ICP备18006898号</a>
+			</div>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="Home/js/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="Home/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="Home/js/jquery-scrolltofixed.js"></script>
+	<script type="text/javascript" src="Home/js/jquery.nav.js"></script>
+	<script type="text/javascript" src="Home/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" src="Home/js/jquery.isotope.js"></script>
+	<script type="text/javascript" src="Home/js/wow.js"></script>
+
+
+	<script src="Home/js/jquery.fancybox.pack.js"></script>
+	<script src="Home/js/jquery.fancybox-media.js"></script>
+	<script src="Home/js/modernizr.custom.js"></script>
+	<script src="Home/js/jquery.isotope.min.js"></script>
+	<script src="Home/js/jquery.magnific-popup.min.js"></script>
+
+	<script src="Home/contact/jqBootstrapValidation.js"></script>
+	<script src="Home/contact/contact_me.js"></script>
+	<script type="text/javascript" src="Home/js/custom.js"></script>
+
+	<script type="text/javascript" src="Home/js/smoothscroll.js"></script>
+	<script type="text/javascript" src="Home/js/owl.carousel.min.js"></script>
+
+	<script type="text/javascript" src="Home/js/main.js"></script>
 </body>
+
 </html>
