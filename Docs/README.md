@@ -1,3 +1,6 @@
-# AutoDomain
+# 本生数据管理平台
 
-> An awesome project.
+
+
+用户名：admin
+密码：admin_123
