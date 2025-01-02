@@ -153,10 +153,6 @@ p {
     margin: 0 5px;
 }
 
-.navStyle ul li:first-child {
-	/*margin:0px;*/;
-}
-
 .navStyle ul li a {
     display: block;
     font-size: 15px;
@@ -232,9 +228,9 @@ p {
     bottom: 0px;
 }
 
-.top_left_cont {
+/* .top_left_cont {
     padding: 80px 0;
-}
+} */
 
 .top_left_cont h3 {
     font-size: 16px;
@@ -1822,16 +1818,16 @@ width: 99%;
  color: #fff;
 }
 .lightspot-box ul li:hover >.lightspot-img01{
- background: url("/img/index/light01_act.png") no-repeat center center;
+ background: url("/Home/img/index/light01_act.png") no-repeat center center;
 }
 .lightspot-box ul li:hover >.lightspot-img02{
- background: url("/img/index/light02_act.png") no-repeat center center;
+ background: url("/Home/img/index/light02_act.png") no-repeat center center;
 }
 .lightspot-box ul li:hover >.lightspot-img03{
- background: url("/img/index/light03_act.png") no-repeat center center;
+ background: url("/Home/img/index/light03_act.png") no-repeat center center;
 }
 .lightspot-box ul li:hover >.lightspot-img04{
- background: url("/img/index/light04_act.png") no-repeat center center;
+ background: url("/Home/img/index/light04_act.png") no-repeat center center;
 }
 
 .lightspot-box ul li div{
