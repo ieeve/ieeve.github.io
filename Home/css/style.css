@@ -1891,7 +1891,7 @@ width: 99%;
   padding-bottom: 20px;
   padding-right: 10px;
   position: absolute;
-
+  right: -84px;
   text-align: right;
   top: -58px;
 }
@@ -1937,9 +1937,9 @@ width: 99%;
 	padding-top: 20px;
 	padding-right: 10px;
 	position: absolute;
-
+    right: -84px;
 	text-align: right;
-	top: 480px;
+	top: 465px;
 }
 .feature-left-bottom i{
     color: #fff;
@@ -1976,7 +1976,7 @@ width: 99%;
   padding-bottom: 20px;
   padding-left: 10px;
   position: absolute;
-  left: -113px;
+  left: -90px;
   text-align: left;
   top: -87px;
 }
@@ -2023,7 +2023,7 @@ width: 99%;
 	position: absolute;
 	left: -113px;
 	text-align: left;
-	top: 467px;
+	top: 480px;
 }
 .feature-right-bottom i{
     color: #fff;
