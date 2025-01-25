@@ -10,18 +10,54 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link href="/Home/css/style.css" rel="stylesheet" type="text/css">
+  <link href="main.css" rel="stylesheet" type="text/css">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
 </head>
 <body>
+  <header id="header_wrapper">
+    <div class="header_box">
+      <div class="logo">
+        <a href="#">
+          <img src="/Home/img/logo_ieeve.png" alt="本生对象管理平台"> 官方文档
+        </a>
+      </div>
+      <div class="navbar navbar-inverse" role="navigation">
+        <div id="main-nav" class="collapse navbar-collapse navStyle">
+          <ul class="nav navbar-nav" id="mainNav">
+            <li class="active">
+              <a href="#hero_section" class="scroll-link">首页</a>
+            </li>
+            <li>
+              <a href="#aboutUs" class="scroll-link">品牌</a>
+            </li>
+            <li>
+              <a href="#feature-section" class="scroll-link">功能</a>
+            </li>
+            <li>
+              <a href="#pricing" class="scroll-link">价格</a>
+            </li>
+            <li>
+              <a href="#contact" class="scroll-link">联系</a>
+            </li>
+            <li>
+              <a href="/Docs/index.html#/" target="_blank" class="scroll-link">文档</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  </header>
   <div id="app"></div>
   <script>
     window.$docsify = {
-      name: 'AutoDomain 官方文档',
+      name: '',
       repo: '',
        // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
        loadSidebar: true,
             // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
-            loadNavbar: true,
+            loadNavbar: false,
             // 封面支持，默认加载的是项目根目录下的_coverpage.md文件
             coverpage: false,
             // 最大支持渲染的标题层级
@@ -29,7 +65,7 @@
             // 自定义侧边栏后默认不会再生成目录，设置生成目录的最大层级（建议配置为2-4）
             subMaxLevel: 4,
             // 小屏设备下合并导航栏到侧边栏
-            mergeNavbar: true,
+            mergeNavbar: false,
             /*搜索相关设置*/
             search: {
                 maxAge: 86400000,// 过期时间，单位毫秒，默认一天

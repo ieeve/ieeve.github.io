@@ -1,0 +1,5 @@
+/*定义顶部导航*/
+body.sticky .sidebar,body.sticky {
+    padding-top: 10px;
+     position:relative;
+}
