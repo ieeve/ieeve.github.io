@@ -1,5 +1,96 @@
-/*定义顶部导航*/
-body.sticky .sidebar,body.sticky {
-    padding-top: 10px;
-     position:relative;
+a, a:hover, a:active {
+    outline: 0px !important;
+	color:#9b59b6;
+    text-decoration: none;
+}
+
+#header {
+    padding: 0;
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    border-block-end: 1px solid #eee;
+    background-color: rgba(255, 255, 255, 0.6);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    transition: background-color 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
+    /* box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, .1); */
+}
+
+#header .logo {
+    padding:6px 0 0 30px;
+    color: rgba(0,0,0,.85);
+    min-width: 249px;
+    float: left;
+    /* border-right: solid 1px #eee; */
+    /*logo ¿í¶È²»È·¶¨£¬²»Òª½Ðborder*/
+   /* box-shadow: 0 -2px 10px rgba(0, 0, 0, .1);*/
+}
+    #header .logo img {
+        height: 48px;
+    }
+
+    #header .title{
+    font-size: 18px;
+    line-height: 64px;
+    padding: 0 24px;
+    }
+
+/* Nav Styles ---------------------------------*/
+.navStyle {
+    float: right;
+    font-size: 15px;
+    margin: 8px 50px 0px 10px;
+}
+
+.navStyle ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.navStyle ul li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.navStyle ul li a {
+    padding: 10px;
+    font-size: 15px;
+    color: #353535;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+}
+
+.navStyle ul li a:hover {
+    color: #9b59b6;
+    background-color: #eee;
+}
+
+.navStyle > li > a:hover, .nav > li > a:focus {
+    text-decoration: none;
+    color: #9b59b6;
+    background-color: transparent;
+}
+
+.navStyle >ul li.active > a,
+.navStyle > li.active > a:hover {
+    text-decoration: none;
+    color: #9b59b6;
+    background-color: transparent;
+}
+
+/*覆盖CSS*/
+.sidebar{
+    padding-top: 70px !important;
+}
+
+.sidebar ul li.active>a {
+    color: #9b59b6;
+}
+
+.sidebar-toggle span {
+    background-color: #9b59b6;
 }

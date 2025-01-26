@@ -10,45 +10,24 @@
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
-  <link href="/Home/css/style.css" rel="stylesheet" type="text/css">
   <link href="main.css" rel="stylesheet" type="text/css">
   <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/sidebar.min.css" /> -->
 </head>
 <body>
-  <header id="header_wrapper">
-    <div class="header_box">
-      <div class="logo">
-        <a href="#">
-          <img src="/Home/img/logo_ieeve.png" alt="本生对象管理平台"> 官方文档
-        </a>
-      </div>
-      <div class="navbar navbar-inverse" role="navigation">
-        <div id="main-nav" class="collapse navbar-collapse navStyle">
-          <ul class="nav navbar-nav" id="mainNav">
-            <li class="active">
-              <a href="#hero_section" class="scroll-link">首页</a>
-            </li>
-            <li>
-              <a href="#aboutUs" class="scroll-link">品牌</a>
-            </li>
-            <li>
-              <a href="#feature-section" class="scroll-link">功能</a>
-            </li>
-            <li>
-              <a href="#pricing" class="scroll-link">价格</a>
-            </li>
-            <li>
-              <a href="#contact" class="scroll-link">联系</a>
-            </li>
-            <li>
-              <a href="/Docs/index.html#/" target="_blank" class="scroll-link">文档</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  </header>
+  <Header Id="header">
+    <div class="logo"><a href="/"><img src="/Home/img/logo_ieeve.png" /></a></div>
+<span class="title">官方文档</span>
+<span class="navStyle">
+    <ul>
+      <li class="active">
+        <a href="/Docs/index.html#/" target="_blank">首页</a>
+      </li>
+      <li>
+        <a href="/Docs/index.html#/" target="_blank" class="scroll-link">文档</a>
+      </li>
+    </ul>
+</span>
+</Header>
   <div id="app"></div>
   <script>
     window.$docsify = {
