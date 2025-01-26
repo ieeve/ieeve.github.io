@@ -1,3 +1,9 @@
+body {
+    background: #fff;
+    font-family: "Microsoft Yahei",arial,"Hiragino Sans GB",sans-serif;
+    color: #333;
+}
+
 a, a:hover, a:active {
     outline: 0px !important;
 	color:#9b59b6;
@@ -39,8 +45,8 @@ a, a:hover, a:active {
 /* Nav Styles ---------------------------------*/
 .navStyle {
     float: right;
-    font-size: 15px;
-    margin: 8px 50px 0px 10px;
+    font-size: 16px;
+    margin: 8px 3% 0px 10px;
 }
 
 .navStyle ul {
@@ -55,7 +61,6 @@ a, a:hover, a:active {
 
 .navStyle ul li a {
     padding: 10px;
-    font-size: 15px;
     color: #353535;
     text-decoration: none;
     text-transform: uppercase;
@@ -95,6 +100,25 @@ a, a:hover, a:active {
     background-color: #9b59b6;
 }
 
+/*左侧搜索框*/
+.search {
+    margin-bottom: 2px !important;
+    padding: 6px;
+    border-bottom: 0px solid #eee !important;
+}
 .search input {
     border: 1px solid #ddd !important;
+}
+
+.sidebar .sidebar-nav {
+    line-height: 2em;
+    padding:0 0 40px 0px;
+}
+
+.sidebar-nav li {
+    margin: 8px;
+}
+
+.markdown-section {
+    max-width: 90%;
 }
