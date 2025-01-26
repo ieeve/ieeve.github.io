@@ -94,3 +94,7 @@ a, a:hover, a:active {
 .sidebar-toggle span {
     background-color: #9b59b6;
 }
+
+.search input {
+    border: 1px solid #ddd !important;
+}
