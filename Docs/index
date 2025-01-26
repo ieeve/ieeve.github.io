@@ -15,15 +15,15 @@
 </head>
 <body>
   <Header Id="header">
-    <div class="logo"><a href="/"><img src="/Home/img/logo_ieeve.png" /></a></div>
+    <div class="logo"><a href="/"><img src="/home/img/logo_ieeve.png" /></a></div>
 <span class="title">官方文档</span>
 <span class="navStyle">
     <ul>
       <li class="active">
-        <a href="/Docs/index.html#/" target="_blank">首页</a>
+        <a href="/docs/index.html#/" target="_blank">首页</a>
       </li>
       <li>
-        <a href="/Docs/index.html#/" target="_blank" class="scroll-link">文档</a>
+        <a href="/docs/index.html#/" target="_blank" class="scroll-link">文档</a>
       </li>
     </ul>
 </span>
@@ -35,6 +35,9 @@
       repo: '',
        // 侧边栏支持，默认加载的是项目根目录下的_sidebar.md文件
        loadSidebar: '_sidebar.md',
+       alias: {
+      '/.*/_sidebar.md': '/_sidebar.md'
+    },
             // 导航栏支持，默认加载的是项目根目录下的_navbar.md文件
             loadNavbar: false,
             // 封面支持，默认加载的是项目根目录下的_coverpage.md文件

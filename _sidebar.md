@@ -1,4 +1,0 @@
-- [首页介绍](README.md)
-  - [介绍](README.md)
-- 发布与部署
-  - [Linux部署](publish/deploy.md) 
